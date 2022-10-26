@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random number generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+
+<body class="bg-blue-100">
+    <div>
+        <label for="f" class="font-bold">First number</label>
+        <textarea name="first" id="f" cols="30" rows="1" class="ml-8 mt-24"></textarea>
+
+        <label for="s" class="font-bold">Second number</label>
+        <textarea name="second" id="s" cols="30" rows="1" class="ml-16 mt-24"></textarea>
+       
+    </div>
+    
+    <div class="margin">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="btnClick" onclick="addVal()">
+            Generate Number
+        </button>
+    </div>
+    <div>
+        <label for="f" class="font-bold">Enter your Answer here</label>
+        <textarea id="myTextarea"cols="30" rows="1" class="ml-8 mt-24"></textarea>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button" onclick="myFunction()">Submit</button>
+   
+    </div>
+
+    <p id="demo"></p>
+    
+    <div>
+        <label for="f" class="font-bold">Correct Answer</label>
+        <textarea name="first" id="c" cols="30" rows="1" class="ml-8 mt-24"></textarea>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="btnClick" onclick="correctNumber()">
+            Correct Number
+        </button>
+   
+    </div>
+    
+    <!-- 
+        <div id="siggen">
+    <textarea id="content" cols="80" rows="10"></textarea>
+     <button id="btnClick" onclick="addVal()">Click</button> 
+     -->
+
+
+
+</body>
+
+</html>
